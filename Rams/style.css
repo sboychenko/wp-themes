@@ -338,6 +338,18 @@ body a {
 
 .credits a:hover { color: #fff; }
 
+.mobile-menu .credits_mobile a{
+	font-size: 20px;
+	font-weight: 700;
+	color: rgba( 255, 255, 255, 0.25 );
+	margin-right: 3px;
+	display: inline-block;
+}
+
+.mobile-menu .credits_mobile a:hover {
+	color: #fff;
+}
+
 img#wpstats { display: none !important } /* silly wp stats */
 
 
