@@ -43,9 +43,11 @@ function rams_load_javascript_files() {
 	if ( !is_admin() ) {
 		wp_register_script( 'rams_global', get_template_directory_uri() . '/js/global.js', array( 'jquery' ), '', true );
 		wp_register_script( 'rams_flexslider', get_template_directory_uri() . '/js/flexslider.min.js', array( 'jquery' ), '', true );
+		wp_register_script( 'rams_fontawesome', 'https://use.fontawesome.com/4c4b094aad.js', array( 'jquery' ), '', true );
 		
 		wp_enqueue_script( 'rams_flexslider' );
 		wp_enqueue_script( 'rams_global' );
+		wp_enqueue_script( 'rams_fontawesome' );
 		
 		if ( is_singular() && get_option( 'thread_comments' ) ) { wp_enqueue_script( 'comment-reply' ); }
 		
@@ -58,7 +60,7 @@ add_action( 'wp_enqueue_scripts', 'rams_load_javascript_files' );
 // Register and enqueue styles
 function rams_load_style() {
 	if ( !is_admin() ) {
-	    wp_register_style( 'rams_googleFonts', '//fonts.googleapis.com/css?family=Montserrat:400,700|Crimson+Text:400,700,400italic,700italic' );
+	    wp_register_style( 'rams_googleFonts', '//fonts.googleapis.com/css?family=Exo+2:400,700|Roboto:400,700,400i,700i&subset=cyrillic' );
 		wp_register_style( 'rams_style', get_stylesheet_uri() );
 		
 	    wp_enqueue_style( 'rams_googleFonts' );
@@ -72,7 +74,7 @@ add_action( 'wp_print_styles', 'rams_load_style' );
 // Add editor styles
 function rams_add_editor_styles() {
     add_editor_style( 'rams-editor-styles.css' );
-    $font_url = '//fonts.googleapis.com/css?family=Montserrat:400,700|Crimson+Text:400,700,400italic,700italic';
+    $font_url = '//fonts.googleapis.com/css?family=Exo+2:400,700|Roboto:400,700,400i,700i&subset=cyrillic';
     add_editor_style( str_replace( ',', '%2C', $font_url ) );
 }
 add_action( 'init', 'rams_add_editor_styles' );
@@ -297,7 +299,7 @@ class rams_Customize {
             'priority' => 10, //Determines the order this control appears in for the specified section
          ) 
       ) );
-      
+
       //4. We can also change built-in settings by modifying properties. For instance, let's make some stuff use live preview JS...
       $wp_customize->get_setting( 'blogname' )->transport = 'postMessage';
       $wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
