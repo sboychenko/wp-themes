@@ -1474,6 +1474,19 @@ li.comment { position: relative; }
 
 .page-title span { color: #999; }
 
+.page-title .tag-meta {
+	margin-top: 10px;
+}
+
+.page-title .tag-meta p {
+	font-family: 'Roboto', 'Times New Roman', 'Times', serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 18px;
+	color: #AAAAAA;
+
+}
+
 
 /* -------------------------------------------------------------------------------- */
 /*	11.	Responsive
