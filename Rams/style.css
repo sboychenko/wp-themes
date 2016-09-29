@@ -343,7 +343,7 @@ body a {
 	font-weight: 700;
 	color: rgba( 255, 255, 255, 0.25 );
 	margin-right: 3px;
-	display: inline-block;
+	display: inline;
 }
 
 .mobile-menu .credits_mobile a:hover {
