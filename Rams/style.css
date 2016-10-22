@@ -1509,7 +1509,6 @@ li.comment { position: relative; }
 
 @media (max-width: 930px) {
 	
-	
 	/* structure */
 	
 	.sidebar {
@@ -1645,6 +1644,12 @@ li.comment { position: relative; }
 	}
 	
 	.mobile-menu a:hover { color: #fff; }
+
+	/* fix for title*/
+	.page-title {
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+	}
 	
 	
 }
