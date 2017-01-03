@@ -289,6 +289,14 @@ body a {
 .blog-title a { color: #fff; }
 .blog-title a:hover { color: #fff; }
 
+.blog-title img.avatar {
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.blog-title a {
+	margin-left: -24px;
+}
 
 /* Main menu --------------------------------------- */
 

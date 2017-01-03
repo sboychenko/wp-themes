@@ -98,7 +98,7 @@
 					
 					<?php if (has_tag()) : ?>
 							
-						<p><strong><?php _e('Tags','rams'); ?></strong><?php the_tags('', ', '); ?></p>
+						<p><strong><?php _e('Tags','rams'); ?></strong><?php the_tags('#', ', #'); ?></p>
 					
 					<?php endif; ?>
 					
