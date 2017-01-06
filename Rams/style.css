@@ -320,9 +320,11 @@ body a {
 }
 
 .main-menu a:hover,
-.main-menu .current_menu_item > a,
-.main-menu .current_page_item > a { color: #fff; }
-
+.main-menu .current-menu-item > a,
+.main-menu .current-page-item > a,
+.main-menu .current-menu-parent > a {
+	color: #fff;
+}
 
 /* Credits --------------------------------------- */
 

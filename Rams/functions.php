@@ -433,4 +433,31 @@ function nav_menu_post_count($output, $item, $depth, $args)
 
 }
 
+# удаляем лишнюю информацию из head страницы
+remove_action( 'wp_head', 'feed_links_extra', 3 );
+remove_action( 'wp_head', 'feed_links', 2 );
+remove_action( 'wp_head', 'rsd_link' );
+remove_action( 'wp_head', 'wlwmanifest_link' );
+remove_action( 'wp_head', 'index_rel_link' );
+remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 );
+remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );
+remove_action( 'wp_head', 'adjacent_posts_rel_link', 10, 0 );
+remove_action( 'wp_head', 'wp_generator' );
+
+# выводим время генерации, запросы и потребление памяти
+function usage(){
+    printf( ('SQL запросов:%d. Время генерации:%s сек. Потребление памяти:'), get_num_queries(), timer_stop(0, 3) );
+    if ( function_exists('memory_get_usage') ) echo round( memory_get_usage()/1024/1024, 2 ) . ' mb ';
+}
+//add_filter('admin_footer_text', 'usage');
+//add_filter('wp_footer', 'usage');
+
+/* Меняем картинку логотипа WP на странице входа */
+function my_login_logo(){
+    echo '<style type="text/css">#login h1 a { background: url('. get_bloginfo('template_directory') .'/images/favicon.png) no-repeat 0 0 !important; }</style>';
+}
+add_action('login_head', 'my_login_logo');
+add_filter( 'login_headerurl', create_function('', 'return get_home_url();') );
+add_filter( 'login_headertitle', create_function('', 'return false;') );
+
 ?>
