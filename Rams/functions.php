@@ -460,4 +460,11 @@ add_action('login_head', 'my_login_logo');
 add_filter( 'login_headerurl', create_function('', 'return get_home_url();') );
 add_filter( 'login_headertitle', create_function('', 'return false;') );
 
+
+/* Open Graph Tags */
+function custom_jetpack_default_image() {
+    return get_stylesheet_directory_uri() . '/images/og_image.jpg';
+}
+add_filter( 'jetpack_open_graph_image_default', 'custom_jetpack_default_image' );
+
 ?>
