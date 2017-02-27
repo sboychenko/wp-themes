@@ -467,4 +467,10 @@ function custom_jetpack_default_image() {
 }
 add_filter( 'jetpack_open_graph_image_default', 'custom_jetpack_default_image' );
 
+/* Скроем поле сайт */
+function remove_comment_fields($fields) {
+    unset($fields['url']);
+    return $fields;
+}
+add_filter('comment_form_default_fields', 'remove_comment_fields');
 ?>
