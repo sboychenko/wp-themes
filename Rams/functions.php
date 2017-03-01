@@ -27,6 +27,7 @@ function rams_setup()
 
     // Add nav menu
     register_nav_menu('primary', __('Primary Menu', 'rams'));
+    register_nav_menu('footermenu', __('Footer Menu', 'rams'));
 
     // Make the theme translation ready
     load_theme_textdomain('rams', get_template_directory() . '/languages');

@@ -140,6 +140,10 @@ msgstr "Закрепленная запись"
 msgid "Primary Menu"
 msgstr "Главное меню"
 
+#: functions.php:28
+msgid "Footer Menu"
+msgstr "Нижнее меню"
+
 #: functions.php:106
 msgid "Read more"
 msgstr "Читать дальше"

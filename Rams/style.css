@@ -1534,6 +1534,26 @@ li.comment { position: relative; }
 	height: 50px;
 }
 
+.footer-wrapper {
+	margin: 0 0 20px 300px;
+}
+
+.footer-wrapper ul.menu {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	opacity: 0.6;
+}
+
+.footer-wrapper ul.menu li {
+	list-style-type: none;
+	display: inline;
+}
+
+.footer-wrapper ul.menu li:not(:first-child):before {
+	content: " | ";
+}
+
 /* -------------------------------------------------------------------------------- */
 /*	11.	Responsive
 /* -------------------------------------------------------------------------------- */
