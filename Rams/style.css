@@ -90,7 +90,7 @@ body {
 	color: #333;
 	background: #f5f5f5;
 	font-family: 'Exo 2', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	-webkit-text-size-adjust: 100%;
 	position: relative;
 }
@@ -824,7 +824,7 @@ abbr, acronym { cursor: help; }
 .post-content kbd,
 .post-content pre,
 .post-content tt {
-	font-size: 15px;
+	/*font-size: 15px;*/
 	background: #EEE;
 	font-family: Menlo, Monaco, monospace;
 }
@@ -1523,6 +1523,7 @@ li.comment { position: relative; }
 
 .sidebar-inner {
 	height: 100%;
+	font-size: 1.1em;
 }
 
 .menu-wrapper {
