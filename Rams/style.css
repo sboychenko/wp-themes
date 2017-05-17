@@ -326,6 +326,10 @@ body a {
 	color: #fff;
 }
 
+.main-menu li.menu-item-type-taxonomy {
+	margin-left: 10px;
+}
+
 /* Credits --------------------------------------- */
 
 
@@ -347,18 +351,6 @@ body a {
 }
 
 .credits a:hover { color: #fff; }
-
-.mobile-menu .credits_mobile a{
-	font-size: 20px;
-	font-weight: 700;
-	color: rgba( 255, 255, 255, 0.25 );
-	margin-right: 3px;
-	display: inline;
-}
-
-.mobile-menu .credits_mobile a:hover {
-	color: #fff;
-}
 
 img#wpstats { display: none !important } /* silly wp stats */
 
@@ -1577,11 +1569,10 @@ li.comment { position: relative; }
 
 }
 
-
 @media (max-width: 930px) {
 	
 	/* structure */
-	
+
 	.sidebar {
 		width: 100%;
 		padding: 30px 0;
@@ -1716,7 +1707,23 @@ li.comment { position: relative; }
 	
 	.mobile-menu a:hover { color: #fff; }
 
-	/* fix for title*/
+	.mobile-menu .credits_mobile a{
+		font-size: 20px;
+		font-weight: 700;
+		color: rgba( 255, 255, 255, 0.25 );
+		margin-right: 3px;
+		display: inline;
+	}
+
+	.mobile-menu .credits_mobile a:hover {
+		color: #fff;
+	}
+
+	.mobile-menu li.menu-item-type-taxonomy {
+		margin-left: 10px;
+	}
+
+		/* fix for title*/
 	.page-title {
 		margin-left: 5% !important;
 		margin-right: 5% !important;
@@ -1809,6 +1816,9 @@ li.comment { position: relative; }
 	#infinite-handle,
 	.infinite-loader { margin: 7% 0; }
 
+	#wpadminbar {
+		margin-top: 0;
+	}
 
 }
 
@@ -1896,7 +1906,10 @@ li.comment { position: relative; }
 		padding: 12px 16px;
 		font-size: 0.9em;
 	}
-	
+
+	#wpadminbar {
+		margin-top: -46px;
+	}
 	
 }
 
