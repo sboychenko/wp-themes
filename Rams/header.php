@@ -81,6 +81,7 @@
 				<p class="credits">
 				    <a href="http://vk.com/sboychenko1" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
                     <a href="https://www.instagram.com/sboychenko1" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/channel/UC7MHnCpiRVPmQACZQH9oEow" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
                     <a href="https://github.com/sboychenko" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                     <a href="https://www.linkedin.com/in/sergey-boychenko-77b0b6a1" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 				</p>
@@ -115,6 +116,7 @@
 			<li class="credits_mobile">
                 <a href="http://vk.com/sboychenko1" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
                 <a href="https://www.instagram.com/sboychenko1" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UC7MHnCpiRVPmQACZQH9oEow" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
                 <a href="https://github.com/sboychenko" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/in/sergey-boychenko-77b0b6a1" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             </li>
