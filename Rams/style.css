@@ -273,7 +273,7 @@ body a {
 	font-size: 1.5em;
 	line-height: 1;
 	font-weight: 700;
-	/*text-align: right;*/
+	text-align: center;
 }
 
 .blog-title:after {
@@ -293,10 +293,18 @@ body a {
 	border-radius: 50%;
 	display: block;
 	margin: 0 auto;
+	vertical-align: middle;
 	/*border: 2px solid #666;*/
 }
 .blog-title a {
-	font-size: 0.91em;
+	font-size: 0.9em;
+}
+
+.blog-title span {
+	color: red;
+	margin-left: -50px;
+	margin-right: -50px;
+	font-size: 1em;
 }
 
 /* Main menu --------------------------------------- */
@@ -1571,6 +1579,11 @@ li.comment { position: relative; }
 	
 	.wrapper { margin-left: 250px; }
 
+	.blog-title span {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 }
 
 @media (max-width: 930px) {
@@ -1612,7 +1625,10 @@ li.comment { position: relative; }
 	.blog-title:after,
 	.main-menu,
 	.credits { display: none; }
-	
+
+	.blog-title img.avatar {
+		display: none;
+	}
 	
 	/* navigation */
 	
