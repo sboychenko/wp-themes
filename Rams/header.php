@@ -28,7 +28,7 @@
                     <?php elseif ( get_bloginfo( 'description' ) || get_bloginfo( 'title' ) ) : ?>
 
                         <h1 class="blog-title">
-                            <?php echo get_avatar( 'serg.boychenko@gmail.com', 50, '', 'ME' ); ?>
+                            <?php echo get_avatar( 'serg.boychenko@gmail.com', 100, '', 'ME' ); ?>
                             <a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'title' ) ); ?></a>
                         </h1>
 
@@ -79,9 +79,12 @@
                 </div>
 
 				<p class="credits">
-				    <a href="http://vk.com/sboychenko1" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    <span>
                     <a href="https://www.instagram.com/sboychenko1" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     <a href="https://www.youtube.com/channel/UC7MHnCpiRVPmQACZQH9oEow" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                    </span>
+                    <br/>
+				    <a href="http://vk.com/sboychenko1" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
                     <a href="https://github.com/sboychenko" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                     <a href="https://www.linkedin.com/in/sergey-boychenko-77b0b6a1" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 				</p>
@@ -114,9 +117,11 @@
 			} ?>
 
 			<li class="credits_mobile">
+                <span>
+                    <a href="https://www.instagram.com/sboychenko1" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/channel/UC7MHnCpiRVPmQACZQH9oEow" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                </span>
                 <a href="http://vk.com/sboychenko1" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/sboychenko1" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/channel/UC7MHnCpiRVPmQACZQH9oEow" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
                 <a href="https://github.com/sboychenko" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/in/sergey-boychenko-77b0b6a1" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             </li>
